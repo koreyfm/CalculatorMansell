@@ -54,7 +54,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                textView.setText(textView.getText() + "0");
+                if((!(textView.getText().toString().startsWith("0"))) || textView.getText().length()>1){
+
+                    textView.setText(textView.getText() + "0");
+
+                }
+
+                //textView.setText(textView.getText() + "0");
 
             }
         });
