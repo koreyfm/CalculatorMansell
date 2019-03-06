@@ -152,6 +152,7 @@ public class MainActivity extends AppCompatActivity {
                 }
 
 
+
             }
         });
 
@@ -185,7 +186,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                textView.setText(textView.getText() + ".");
+                if(!(textView.getText().toString().contains("."))) {
+
+                    textView.setText(textView.getText() + ".");
+                }
 
             }
         });
